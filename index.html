@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionários</title>
+</head>
+
+<body>
+    <hr>
+    <h2>Formulário de Funcionários</h2>
+
+    <form action="" method="post">
+
+        <!--campos pra preencher-->
+        <label for="nome">Nome:</label> <br>
+        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome..."> <br>
+
+        <label for="idade">Idade:</label> <br>
+        <input type="number" id="idade" name="idade" required placeholder="Digite sua idade..."> <br>
+
+        <label for="cargo">Cargo:</label> <br>
+        <input type="text" id="cargo" name="cargo" required placeholder="Digite seu cargo..."> <br>
+
+        <label for="salario">Salário:</label> <br>
+        <input type="number" id="salario" name="salario" required placeholder="Digite seu salário..."> <br> <br>
+
+        <!--botoes-->
+        <input id="salvar" type="submit" value="Cadastrar"> 
+
+    </form>
+
+    <hr>
+
+    <h2>Tabela de Funcionários</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th bgcolor="lightblue" width="130">ID</th>
+                <th bgcolor="lightblue" width="130">Nome</th>
+                <th bgcolor="lightblue" width="130">Idade</th>
+                <th bgcolor="lightblue" width="130">Cargo</th>
+                <th bgcolor="lightblue" width="130">Salário</th>
+                <th bgcolor="lightblue" width="130">Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabela">
+            <tr>
+                <th></th>  <!--separação da grade-->
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+
+            </tr>
+        </tbody>
+    </table> <br>
+
+    <hr>
+
+    <h2>Relatórios</h2>
+    <button id="relSalario">Funcionários com salário > 5000</button>
+    <button id="relMedia">Média salarial</button>
+    <button id="relCargos">Cargos únicos</button>
+    <button id="relNomes">Nomes em maiúsculo</button>
+
+    <div id="resultado" style="margin-top: 20px;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
